@@ -1,6 +1,9 @@
 # Yogasmara Addon
 This addon is created for blender python.
 
+## How to Install 
+Insalling flow will goes here.
+
 ## List of Features
 
 ### Save File
