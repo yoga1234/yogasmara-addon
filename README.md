@@ -44,3 +44,5 @@ This addon is created for blender python.
 - ### Cylinder
 - ### Cone
 - ### Torus
+
+Created with :heartbeat: By @yoga1234
