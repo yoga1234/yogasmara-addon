@@ -23,10 +23,10 @@ class YogasmaraFileManager(bpy.types.Panel):
         layout = self.layout
         
         row = layout.row()
-        row.operator("wm.open_mainfile", text="Open File")
+        row.operator("wm.open_mainfile", text="Open File", icon="FILEBROWSER")
         
         row = layout.row()
-        row.operator("wm.save_mainfile", text="Save File")
+        row.operator("wm.save_mainfile", text="Save File", icon="FILE_TICK")
         
 class YogasmaraObjectManager(bpy.types.Panel):
     bl_idname = "PANEL_PT_yogasmara_object_manager"
@@ -42,7 +42,7 @@ class YogasmaraObjectManager(bpy.types.Panel):
         row.operator("object.delete", text="Delete Selected Object")
         
         row = layout.row()
-        row.operator("outliner.delete", text="Delete All Object").hierarchy = True
+        row.operator("object.delete_all", text="Delete All Object")
         
         row = layout.row()
         row.operator("object.select_all", text="Select All Object")
@@ -58,28 +58,28 @@ class YogasmaraMeshManager(bpy.types.Panel):
         layout = self.layout
         
         row = layout.row()
-        row.operator("mesh.primitive_plane_add", text="Add New Plane")
+        row.operator("mesh.primitive_plane_add", text="Add New Plane", icon="MESH_PLANE")
         
         row = layout.row()
-        row.operator("mesh.primitive_cube_add", text="Add New Cube")
+        row.operator("mesh.primitive_cube_add", text="Add New Cube", icon="MESH_CUBE")
         
         row = layout.row()
-        row.operator("mesh.primitive_circle_add", text="Add New Circle")
+        row.operator("mesh.primitive_circle_add", text="Add New Circle", icon="MESH_CIRCLE")
         
         row = layout.row()
-        row.operator("mesh.primitive_uv_sphere_add", text="Add New UV Sphere")
+        row.operator("mesh.primitive_uv_sphere_add", text="Add New UV Sphere", icon="MESH_UVSPHERE")
         
         row = layout.row()
-        row.operator("mesh.primitive_ico_sphere_add", text="Add New ICO Sphere")
+        row.operator("mesh.primitive_ico_sphere_add", text="Add New ICO Sphere", icon="MESH_ICOSPHERE")
         
         row = layout.row()
-        row.operator("mesh.primitive_cylinder_add", text="Add New Cylinder")
+        row.operator("mesh.primitive_cylinder_add", text="Add New Cylinder", icon="MESH_CYLINDER")
         
         row = layout.row()
-        row.operator("mesh.primitive_cone_add", text="Add New Cone")
+        row.operator("mesh.primitive_cone_add", text="Add New Cone", icon="MESH_CONE")
         
         row = layout.row()
-        row.operator("mesh.primitive_torus_add", text="Add New Torus")
+        row.operator("mesh.primitive_torus_add", text="Add New Torus", icon="MESH_TORUS")
         
         
  
