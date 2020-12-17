@@ -23,26 +23,26 @@ This addon is created for blender python.
 
 ## List of Features
 
-- ### Save File
-- ### Open File
-- ### Delete all Objects in the Scene
-- ### Delete Selected Object
-- ### Select All Object In the Scene
-- ### Create Mesh Primitive
+- Save File
+- Open File
+- Delete all Objects in the Scene
+- Delete Selected Object
+- Select All Object In the Scene
+- Create Mesh Primitive
 
 ## Selecting and Deleting Objects
-- ### Delete Selected Object
-- ### Delete All Object
-- ### Select All Object
+- Delete Selected Object
+- Delete All Object
+- Select All Object
 
 ## Create Primitive Mesh in an Instant
-- ### Plane
-- ### Cube
-- ### Circle
-- ### UV Sphere
-- ### Ico Sphere
-- ### Cylinder
-- ### Cone
-- ### Torus
+- Plane
+- Cube
+- Circle
+- UV Sphere
+- Ico Sphere
+- Cylinder
+- Cone
+- Torus
 
 Created with :heartbeat: By @yoga1234
