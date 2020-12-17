@@ -1,4 +1,16 @@
 import bpy
+
+class YogasmaraDeleteAll(bpy.types.Operator):
+    """Delete all available object on the scene"""
+    bl_idname = "object.delete_all"
+    bl_label = "Delete All Object"
+    
+    def execute(self, context):
+        bpy.ops.object.select_all(action='SELECT')
+        bpy.ops.object.delete(use_global=True)
+        
+        return {'FINISHED'}
+        
         
 class YogasmaraFileManager(bpy.types.Panel):
     bl_idname = "PANEL_PT_yogasmara_file_manager" # Panel Type yogasmara file manager
@@ -28,6 +40,9 @@ class YogasmaraObjectManager(bpy.types.Panel):
         
         row = layout.row()
         row.operator("object.delete", text="Delete Selected Object")
+        
+        row = layout.row()
+        row.operator("outliner.delete", text="Delete All Object").hierarchy = True
         
         row = layout.row()
         row.operator("object.select_all", text="Select All Object")
@@ -72,11 +87,13 @@ def register():
     bpy.utils.register_class(YogasmaraFileManager)
     bpy.utils.register_class(YogasmaraObjectManager)
     bpy.utils.register_class(YogasmaraMeshManager)
+    bpy.utils.register_class(YogasmaraDeleteAll)
 
 def unregister():
     bpy.utils.unregister_class(YogasmaraFileManager)
     bpy.utils.unregister_class(YogasmaraObjectManager)
     bpy.utils.unregister_class(YogasmaraMeshManager)
+    bpy.utils.unregister_class(YogasmaraDeleteAll)
         
 if __name__ == "__main__":
     register()
