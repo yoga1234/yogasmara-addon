@@ -2,7 +2,7 @@ import bpy
 
 class YogasmaraDeleteAll(bpy.types.Operator):
     """Delete all available object on the scene"""
-    bl_idname = "object.delete_all"
+    bl_idname = "object.yogasmara_delete_all"
     bl_label = "Delete All Object"
     
     def execute(self, context):
@@ -13,6 +13,7 @@ class YogasmaraDeleteAll(bpy.types.Operator):
         
         
 class YogasmaraFileManager(bpy.types.Panel):
+    """Yogasmara file manager"""
     bl_idname = "PANEL_PT_yogasmara_file_manager" # Panel Type yogasmara file manager
     bl_category = "Yogasmara Addon" # Name of the addon
     bl_space_type = "VIEW_3D" # where the addon will be placed
@@ -29,6 +30,7 @@ class YogasmaraFileManager(bpy.types.Panel):
         row.operator("wm.save_mainfile", text="Save File", icon="FILE_TICK")
         
 class YogasmaraObjectManager(bpy.types.Panel):
+    """Yogasmara object manager"""
     bl_idname = "PANEL_PT_yogasmara_object_manager"
     bl_category = "Yogasmara Addon"
     bl_space_type = "VIEW_3D"
@@ -48,6 +50,7 @@ class YogasmaraObjectManager(bpy.types.Panel):
         row.operator("object.select_all", text="Select All Object")
         
 class YogasmaraMeshManager(bpy.types.Panel):
+    """Yogasmara mesh manager"""
     bl_idname = "PANEL_PT_yogasmara_mesh_manager"
     bl_category = "Yogasmara Addon"
     bl_space_type = "VIEW_3D"
