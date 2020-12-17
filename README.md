@@ -2,7 +2,9 @@
 This addon is created for blender python.
 
 ## How to Install 
-Insalling flow will goes here.
+1. Download this repo.
+2. Open your blender.
+3. Move into scripting panel
 
 ## List of Features
 
