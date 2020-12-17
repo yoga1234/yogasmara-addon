@@ -5,6 +5,7 @@ This addon is created for blender python.
 1. Download this repo.
 2. Open your blender.
 3. Move into scripting panel
+![Scripting Panel](https://github.com/yoga1234/yogasmara-addon/blob/main/docs/images/scripting_image.png?raw=true)
 
 ## List of Features
 
