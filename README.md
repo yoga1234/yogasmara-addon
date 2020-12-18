@@ -2,6 +2,11 @@
 This addon is created for blender python.
 
 ## How to Install 
+1. ```pip install yogasmara-pkg-septiana-yogasmara==0.1.0```
+
+OR
+
+
 1. Download this repo.
 2. Open your blender.
 3. Move into scripting panel.
